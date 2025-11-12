@@ -52,7 +52,7 @@ def validate_interest_search_functionality(driver , search_value ):
     return interest_found
 
 
-def validate_interest_select_functionality(driver,interest,selected):
+def validate_interest_select_deselect_functionality(driver,interest,selected):
 
     fill_input_field(driver,InformationPage.search_bar,interest)
 
@@ -63,16 +63,6 @@ def validate_interest_select_functionality(driver,interest,selected):
 
 
     return check_selected_number
-
-def validate_interest_deselection_functionality(driver,interest , selected):
-
-    click_on(driver, InformationPage.interest_found(interest))
-    fill_input_field(driver, InformationPage.search_bar, interest)
-    # Click on the Interest
-    check_selected_number = match_element(driver, InformationPage.selected_interest(selected), f"{selected}/4 selected")
-
-    return check_selected_number
-
 
 
 def validate_no_interest_selected(driver):

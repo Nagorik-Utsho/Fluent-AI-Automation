@@ -5,29 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64dfc557-3d51-4fb1-807e-0104b387b7fb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FluentAI.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Features/SignIn/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Features/SignIn/go_to_information_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Features/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Data/SiginTest_data/interest_test_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test Data/SiginTest_data/name_test_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/activities.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/driver_setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/necessary_adb_commands.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/necessary_packages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/report_generator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_signup_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_signup_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_signup_information.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

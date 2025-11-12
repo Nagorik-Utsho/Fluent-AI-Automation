@@ -77,7 +77,7 @@ def test_signin_information(driver):
 
         try:
             # Pass i+1 because the count starts from 1
-            result = validate_interest_select_functionality(driver, interest, i + 1)
+            result = validate_interest_select_deselect_functionality(driver, interest, i + 1)
 
             if result == expected:
                 print(f"✅ [PASSED] '{interest}' worked as expected ({i + 1}/4 selected).")
@@ -112,7 +112,7 @@ def test_signin_information(driver):
             print(f"Decrement number is : {decrease}")
             try:
                 # Pass i+1 because the count starts from 1
-                result = validate_interest_select_functionality(driver, interest, decrease)
+                result = validate_interest_select_deselect_functionality(driver, interest, decrease)
 
                 if result == expected:
                     print(f"✅ [PASSED] '{interest}' worked as expected ({decrease}/4 selected).")
