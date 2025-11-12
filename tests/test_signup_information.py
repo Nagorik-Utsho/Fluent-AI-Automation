@@ -1,5 +1,6 @@
 import json
 import random
+import time
 
 import pytest
 from colorama import Fore
@@ -99,16 +100,21 @@ def test_signin_information(driver):
         print("\n✅ ALL TESTS PASSED SUCCESSFULLY.")
 
 
+    # shuffled_interests = random.sample(selectable_interests, k=len(selectable_interests))
+    # print(shuffled_interests)
 
     #Deselct the selected  interests
     num_items=len(selectable_interests)
     print(selectable_interests)
+
+    print("Going to decrease the number of deselecting")
+
     #  Validating deselecting interest selection
-    for i, value in enumerate(selectable_interests):
+    for i, value in enumerate(selectable_interests ):
             interest = value["interest"]
             expected = value["expected"]
             print(f"🔍 Going to search for '{interest}'")
-            decrease=num_items-i
+            decrease=(num_items-(i+1))
             print(f"Decrement number is : {decrease}")
             try:
                 # Pass i+1 because the count starts from 1

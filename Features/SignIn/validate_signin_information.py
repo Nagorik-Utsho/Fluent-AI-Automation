@@ -62,6 +62,7 @@ def validate_interest_select_deselect_functionality(driver,interest,selected):
 
 
 
+
     return check_selected_number
 
 

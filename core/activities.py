@@ -58,14 +58,13 @@ def click_on(driver, locator_value, timeout=30, max_retries=3):
     raise StaleElementReferenceException(f"Failed to click on element after {max_retries} retries: {locator_value}")
 
 
-def match_element(driver, locator_value, expected_text, timeout=30):
+def match_element(driver, locator_value, expected_text, timeout=5):
     wait = WebDriverWait(driver, timeout)
     field = wait.until(EC.presence_of_element_located(locator_value))
 
-
-
     actual_text = field.get_attribute('content-desc') or field.text
     actual_text = actual_text.strip().lower()
+    print(actual_text)
     expected_text = expected_text.strip().lower()  # Assign the cleaned value
 
     if  expected_text in actual_text:
