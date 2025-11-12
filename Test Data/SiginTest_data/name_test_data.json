@@ -1,0 +1,43 @@
+{
+  "invalid_name_tests": [
+    {"test_case_id": 1, "name": "", "expected": false},
+    {"test_case_id": 1, "name": "  ", "expected": false},
+
+    {"test_case_id": 3, "name": "Mary@Home", "expected": false},
+    {"test_case_id": 4, "name": "Anna!", "expected": false},
+    {"test_case_id": 5, "name": "Peter Parker", "expected": false},
+    {"test_case_id": 6, "name": "ChristopherJohnsonX", "expected": false},
+    {"test_case_id": 7, "name": "123456", "expected": false},
+    {"test_case_id": 8, "name": "@#$%^&*", "expected": false},
+
+    {"test_case_id": 11, "name": "O'Connor", "expected": false},
+    {"test_case_id": 12, "name": "李小龙", "expected": false},
+    {"test_case_id": 13, "name": "M@ryJane123", "expected": false},
+    {"test_case_id": 16, "name": "Tom\nJerry", "expected": false},
+    {"test_case_id": 17, "name": "Sarah\tSmith", "expected": false},
+    {"test_case_id": 18, "name": "Jo4n5", "expected": false},
+    {"test_case_id": 19, "name": "VeryLongNameExceedingLimit", "expected": false},
+    {"test_case_id": 20, "name": "123John456", "expected": false},
+    {"test_case_id": 21, "name": "Emma#Rose", "expected": false},
+    {"test_case_id": 22, "name": "George!", "expected": false},
+    {"test_case_id": 23, "name": "Anna Maria", "expected": false},
+    {"test_case_id": 24, "name": "   ", "expected": false}
+
+
+  ],
+  "valid_name_tests": [
+    {"test_case_id": 4, "name": "Anna", "expected": false}
+  ],
+
+   "exceptional_test_data": [
+    {"test_case_id": 4, "name": "Anna", "expected": false},
+    {"test_case_id": 26, "name": "Alice@Home123", "expected": false},
+     {"test_case_id": 2, "name": "John123", "expected": false},
+      {"test_case_id": 9, "name": "John_Doe", "expected": false},
+    {"test_case_id": 10, "name": "Jane-Doe", "expected": false},
+      {"test_case_id": 25, "name": "John\nDoe", "expected": false},
+
+    {"test_case_id": 14, "name": "Mike ", "expected": false},
+    {"test_case_id": 15, "name": " Alice", "expected": false}
+   ]
+}

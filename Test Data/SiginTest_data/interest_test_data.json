@@ -1,0 +1,155 @@
+{
+  "invalid_name_tests": [
+    {"test_case_id": 1, "name": "", "expected": false},
+    {"test_case_id": 2, "name": "  ", "expected": false},
+    {"test_case_id": 3, "name": "\t", "expected": false},
+    {"test_case_id": 4, "name": "\n", "expected": false},
+    {"test_case_id": 5, "name": "Mary@Home", "expected": false},
+    {"test_case_id": 6, "name": "Anna!", "expected": false},
+    {"test_case_id": 7, "name": "Peter Parker", "expected": false},
+    {"test_case_id": 8, "name": "ChristopherJohnsonX", "expected": false},
+    {"test_case_id": 9, "name": "123456", "expected": false},
+    {"test_case_id": 10, "name": "@#$%^&*", "expected": false},
+    {"test_case_id": 11, "name": "O'Connor", "expected": false},
+    {"test_case_id": 12, "name": "李小龙", "expected": false},
+    {"test_case_id": 13, "name": "M@ryJane123", "expected": false},
+    {"test_case_id": 14, "name": "Tom\nJerry", "expected": false},
+    {"test_case_id": 15, "name": "Sarah\tSmith", "expected": false},
+    {"test_case_id": 16, "name": "Jo4n5", "expected": false},
+    {"test_case_id": 17, "name": "VeryLongNameExceedingLimit", "expected": false},
+    {"test_case_id": 18, "name": "123John456", "expected": false},
+    {"test_case_id": 19, "name": "Emma#Rose", "expected": false},
+    {"test_case_id": 20, "name": "George!", "expected": false},
+    {"test_case_id": 21, "name": "Anna Maria", "expected": false},
+    {"test_case_id": 22, "name": "   ", "expected": false},
+    {"test_case_id": 23, "name": "<script>alert('XSS')</script>", "expected": false},
+    {"test_case_id": 24, "name": "javascript:alert(1)", "expected": false},
+    {"test_case_id": 25, "name": "💀🔥🎉", "expected": false},
+    {"test_case_id": 26, "name": "John_Doe", "expected": false},
+    {"test_case_id": 27, "name": "Jane-Doe", "expected": false},
+    {"test_case_id": 28, "name": "Mike ", "expected": false},
+    {"test_case_id": 29, "name": " Alice", "expected": false},
+    {"test_case_id": 30, "name": "!!!@@@", "expected": false},
+    {"test_case_id": 31, "name": "      ", "expected": false},
+    {"test_case_id": 32, "name": "O'Brian", "expected": false},
+    {"test_case_id": 33, "name": "张伟", "expected": false},
+    {"test_case_id": 34, "name": "Robert123", "expected": false},
+    {"test_case_id": 35, "name": "Alice@Home123", "expected": false},
+    {"test_case_id": 36, "name": "Null\\0Char", "expected": false},
+    {"test_case_id": 37, "name": "Line\nBreak", "expected": false},
+    {"test_case_id": 38, "name": "\\x01\\x02\\x03", "expected": false},
+    {"test_case_id": 39, "name": "VeryVeryVeryLongNameThatExceedsNormalLengthLimitsToTestEdgeCases", "expected": false},
+    {"test_case_id": 40, "name": "123!@#", "expected": false},
+    {"test_case_id": 41, "name": "NameWith😊Emoji", "expected": false},
+    {"test_case_id": 42, "name": "`~<>?", "expected": false},
+    {"test_case_id": 43, "name": "John; DROP TABLE users;", "expected": false},
+    {"test_case_id": 44, "name": "SELECT * FROM users", "expected": false},
+    {"test_case_id": 45, "name": "Admin'--", "expected": false},
+    {"test_case_id": 46, "name": "Test💥💀🔥", "expected": false},
+    {"test_case_id": 47, "name": "LongNameLongNameLongNameLongNameLongNameLongNameLongName", "expected": false},
+    {"test_case_id": 48, "name": "White  Space", "expected": false},
+    {"test_case_id": 49, "name": "\t\tTabbed\t", "expected": false},
+    {"test_case_id": 50, "name": "John\nDoe\nTest", "expected": false}
+  ],
+  "valid_name_tests": [],
+  "exceptional_test_data": [],
+
+"interest_set": [
+    {"interest": "Art & Design", "expected": true},
+    {"interest": "Parenting", "expected": true},
+    {"interest": "Anime & Comics", "expected": true},
+    {"interest": "Podcasts & Audio", "expected": true},
+    {"interest": "Books & Literature", "expected": true},
+    {"interest": "Relationships", "expected": true},
+    {"interest": "Career & Finance", "expected": true},
+    {"interest": "Minimalism", "expected": true},
+    {"interest": "Fashion & Style", "expected": true},
+    {"interest": "Mindfulness & Meditation", "expected": true},
+    {"interest": "Space & Astronomy", "expected": true},
+    {"interest": "Sustainability", "expected": true},
+    {"interest": "Mental Health", "expected": true},
+    {"interest": "News & Politics", "expected": true},
+    {"interest": "History & Culture", "expected": true},
+    {"interest": "Fitness Challenges", "expected": true},
+    {"interest": "Music", "expected": true},
+    {"interest": "Gaming", "expected": true},
+    {"interest": "Language Learning", "expected": true},
+    {"interest": "Sports", "expected": true},
+    {"interest": "Travel", "expected": true},
+    {"interest": "Tech", "expected": true},
+    {"interest": "Photography", "expected": true},
+    {"interest": "Work-Life Balance", "expected": true},
+    {"interest": "Pop Culture", "expected": true},
+    {"interest": "Environment & Nature", "expected": true},
+    {"interest": "Luxury & Lifestyle", "expected": true},
+    {"interest": "Business & Startups", "expected": true},
+    {"interest": "Tea & Coffee Culture", "expected": true},
+    {"interest": "Spirituality", "expected": true},
+    {"interest": "Science & Innovation", "expected": true},
+    {"interest": "Freelancing & Remote Work", "expected": true},
+    {"interest": "Astrology & Zodiac", "expected": true},
+    {"interest": "Volunteer & Social Impact", "expected": true},
+    {"interest": "Shopping", "expected": true},
+    {"interest": "DIY & Crafts", "expected": true},
+    {"interest": "Pets", "expected": true},
+    {"interest": "Cooking", "expected": true},
+    {"interest": "Education & Learning", "expected": true},
+    {"interest": "Movies", "expected": true},
+    {"interest": "Food", "expected": true},
+    {"interest": "Self Improvement", "expected": true},
+    {"interest": "Health & Fitness", "expected": true}
+],
+
+
+  "invalid_search_values": [
+
+
+
+
+    {"test_case_id": 5, "name": "@#$%^&*", "expected": false},
+    {"test_case_id": 6, "name": "!~`", "expected": false},
+    {"test_case_id": 7, "name": "<>[]{}", "expected": false},
+    {"test_case_id": 8, "name": "|\\/:;\"'", "expected": false},
+    {"test_case_id": 9, "name": "+-=*_&^%", "expected": false},
+
+    {"test_case_id": 11, "name": "M@ryJane123", "expected": false},
+    {"test_case_id": 12, "name": "Alice@Home123", "expected": false},
+
+    {"test_case_id": 14, "name": "VeryLongNameExceedingNormalLengthLimitToTestValidation", "expected": false},
+    {"test_case_id": 15, "name": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "expected": false},
+
+    {"test_case_id": 16, "name": "李小龙", "expected": false},
+    {"test_case_id": 17, "name": "张伟", "expected": false},
+    {"test_case_id": 18, "name": "😊😂🔥", "expected": false},
+    {"test_case_id": 19, "name": "💀💥🎉", "expected": false},
+    {"test_case_id": 20, "name": "UnicodeΔΣπ", "expected": false},
+
+    {"test_case_id": 21, "name": "<script>alert('XSS')</script>", "expected": false},
+    {"test_case_id": 22, "name": "javascript:alert(1)", "expected": false},
+    {"test_case_id": 23, "name": "SELECT * FROM users", "expected": false},
+    {"test_case_id": 24, "name": "DROP TABLE users;", "expected": false},
+    {"test_case_id": 25, "name": "Admin'--", "expected": false},
+    {"test_case_id": 26, "name": "<img src=x onerror=alert(1)>", "expected": false},
+    {"test_case_id": 27, "name": "<svg/onload=alert(1)>", "expected": false},
+
+    {"test_case_id": 28, "name": "\\x00\\x01\\x02", "expected": false},
+    {"test_case_id": 30, "name": "Null\\0Char", "expected": false},
+    {"test_case_id": 31, "name": "Line\nBreak", "expected": false},
+    {"test_case_id": 32, "name": "Tab\tChar", "expected": false},
+
+    {"test_case_id": 34, "name": "Jane-Doe", "expected": false},
+    {"test_case_id": 37, "name": "White  Space", "expected": false},
+    {"test_case_id": 38, "name": "LongNameWith1234567890Symbols!@#", "expected": false},
+    {"test_case_id": 39, "name": "!!!###$$$", "expected": false},
+    {"test_case_id": 40, "name": "Name_With_Underscore_", "expected": false}
+
+  ]
+
+
+
+}
+
+
+
+
+
