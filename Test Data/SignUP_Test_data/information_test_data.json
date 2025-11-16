@@ -99,6 +99,9 @@
     {"interest": "Self Improvement", "expected": true},
     {"interest": "Health & Fitness", "expected": true}
 ],
+  "valid_interest": [
+    {"interest": "Anime & Comics", "expected": true}
+  ],
 
 
   "invalid_search_values": [
@@ -143,10 +146,61 @@
     {"test_case_id": 39, "name": "!!!###$$$", "expected": false},
     {"test_case_id": 40, "name": "Name_With_Underscore_", "expected": false}
 
+  ],
+  "english_level_set": [
+    {"test_case_id":1, "level": "Beginner", "expected": true},
+    {"test_case_id":2, "level": "Pre-Intermediate", "expected": true},
+    {"test_case_id":3, "level": "Intermediate", "expected": true},
+    {"test_case_id":4, "level": "Advanced", "expected": true}
+  ],
+
+"valid_area":[{"test_case_id": 14, "area": "Career & Jobs", "expected": false}],
+"area_data": [
+    {"test_case_id": 1, "area": "Science & Technology", "expected": false},
+    {"test_case_id": 2, "area": "Politics & Government", "expected": false},
+    {"test_case_id": 3, "area": "Education & Learning", "expected": false},
+    {"test_case_id": 4, "area": "Sports & Recreation", "expected": false},
+    {"test_case_id": 5, "area": "Entertainment & Media", "expected": false},
+    {"test_case_id": 6, "area": "Environment & Nature", "expected": false},
+    {"test_case_id": 7, "area": "Food & Drink", "expected": false},
+    {"test_case_id": 8, "area": "Family & Friends", "expected": false},
+    {"test_case_id": 9, "area": "Hobbies & Leisure", "expected": false},
+    {"test_case_id": 10, "area": "Health & Fitness", "expected": false},
+    {"test_case_id": 11, "area": "Culture & Society", "expected": false},
+    {"test_case_id": 12, "area": "Shopping & Fashion", "expected": false},
+    {"test_case_id": 13, "area": "Travel & Transport", "expected": false},
+    {"test_case_id": 14, "area": "Career & Jobs", "expected": false},
+    {"test_case_id": 15, "area": "Home & Garden", "expected": false}
+],
+  "valid_time": [{"test_case_id": 1, "time": "5 min/day", "expected": true}],
+"time_goal_data": [
+    {"test_case_id": 1, "time": "5 min/day", "expected": true},
+    {"test_case_id": 2, "time": "10 min/day", "expected": true},
+    {"test_case_id": 3, "time": "15 min/day", "expected": true},
+    {"test_case_id": 4, "time": "20 min/day", "expected": true},
+    {"test_case_id": 5, "time": "30 min/day", "expected": true},
+    {"test_case_id": 6, "time": "45 min/day", "expected": true},
+    {"test_case_id": 7, "time": "60 min/day", "expected": true}
+],
+
+"invalid_name_data": [
+    {"test_case_id": 1, "name": "", "expected": false},
+    {"test_case_id": 1, "name": "  ", "expected": false},
+
+
+    {"test_case_id": 6, "name": "ChristopherJohnsonX", "expected": false},
+    {"test_case_id": 7, "name": "123456", "expected": false},
+    {"test_case_id": 8, "name": "@#$%^&*", "expected": false},
+
+    {"test_case_id": 12, "name": "李小龙", "expected": false},
+    {"test_case_id": 19, "name": "VeryLongNameExceedingLimit", "expected": false}
+
+
+
+  ],
+  "valid_name_tests": [
+    {"test_case_id": 4, "name": "Anna", "expected": false}
   ]
-
-
-
 }
 
 

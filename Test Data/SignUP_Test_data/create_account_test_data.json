@@ -1,0 +1,132 @@
+{
+  "valid_number": [{"test_case_id": 26, "phone": "01626374729", "expected": false}        ],
+  "number_test_data":[
+    {"test_case_id": 1, "phone": "", "expected": false, "message": "Phone number is required"},
+    {"test_case_id": 2, "phone": " ", "expected": false, "message": "Phone number is required"},
+    {"test_case_id": 3, "phone": "123", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 4, "phone": "1234567890", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 5, "phone": "123456789012", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 6, "phone": "0000000000", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 7, "phone": "1234567890a", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 8, "phone": "a1234567890", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 9, "phone": "12345abc890", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 10, "phone": "1234567890#", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 11, "phone": "+12345678901", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 12, "phone": "123-456-78901", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 13, "phone": "(123)45678901", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 14, "phone": "１２３４５６７８９０１", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 15, "phone": "١٢٣٤٥٦٧٨٩٠١١", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 16, "phone": "1234567890 ", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 17, "phone": " 12345678901", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 18, "phone": "12345\n67890", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 20, "phone": "000000000000", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 21, "phone": "1111111111", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 22, "phone": "abcdefghijk", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 23, "phone": "@#$%^&*()!", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 24, "phone": "123 456 78901", "expected": false, "message": "Please enter a valid phone number"},
+    {"test_case_id": 25, "phone": "99999999999 ", "expected": false, "message": "Please enter a valid phone number"}
+],
+  "valid_otp": [{"test_case_id": 11, "otp": " 123456", "expected": false}],
+  "invalid_otp_test_data": [
+    {"test_case_id": 1, "otp": "", "expected": false},
+    {"test_case_id": 2, "otp": "123", "expected": false},
+    {"test_case_id": 3, "otp": "12345", "expected": false},
+    {"test_case_id": 4, "otp": "1234567", "expected": false},
+    {"test_case_id": 5, "otp": "abcdef", "expected": false},
+    {"test_case_id": 6, "otp": "12ab34", "expected": false},
+    {"test_case_id": 7, "otp": "123 456", "expected": false},
+    {"test_case_id": 8, "otp": "12#456", "expected": false},
+    {"test_case_id": 9, "otp": "00000", "expected": false},
+    {"test_case_id": 10, "otp": "12345\n", "expected": false},
+
+    {"test_case_id": 12, "otp": "123456 ", "expected": false},
+    {"test_case_id": 13, "otp": "!23456", "expected": false},
+    {"test_case_id": 14, "otp": "12\t3456", "expected": false},
+    {"test_case_id": 15, "otp": "1 2 3 4 5 6", "expected": false},
+    {"test_case_id": 16, "otp": "12345a", "expected": false},
+    {"test_case_id": 17, "otp": "a12345", "expected": false},
+    {"test_case_id": 18, "otp": "12-3456", "expected": false},
+    {"test_case_id": 19, "otp": "1234.56", "expected": false},
+    {"test_case_id": 20, "otp": "六五四三二一", "expected": false}
+],
+
+
+
+
+  "invalid_name_tests": [
+    {"test_case_id": 1, "name": "", "expected": false},
+    {"test_case_id": 1, "name": "  ", "expected": false},
+
+    {"test_case_id": 3, "name": "Mary@Home", "expected": false},
+    {"test_case_id": 4, "name": "Anna!", "expected": false},
+    {"test_case_id": 5, "name": "Peter Parker", "expected": false},
+    {"test_case_id": 6, "name": "ChristopherJohnsonX", "expected": false},
+    {"test_case_id": 7, "name": "123456", "expected": false},
+    {"test_case_id": 8, "name": "@#$%^&*", "expected": false},
+
+    {"test_case_id": 11, "name": "O'Connor", "expected": false},
+    {"test_case_id": 12, "name": "李小龙", "expected": false},
+    {"test_case_id": 13, "name": "M@ryJane123", "expected": false},
+    {"test_case_id": 16, "name": "Tom\nJerry", "expected": false},
+    {"test_case_id": 17, "name": "Sarah\tSmith", "expected": false},
+    {"test_case_id": 18, "name": "Jo4n5", "expected": false},
+    {"test_case_id": 19, "name": "VeryLongNameExceedingLimit", "expected": false},
+    {"test_case_id": 20, "name": "123John456", "expected": false},
+    {"test_case_id": 21, "name": "Emma#Rose", "expected": false},
+    {"test_case_id": 22, "name": "George!", "expected": false},
+    {"test_case_id": 23, "name": "Anna Maria", "expected": false},
+    {"test_case_id": 24, "name": "   ", "expected": false}
+
+
+  ],
+
+"invalid_name_data": [
+    {"test_case_id": 1, "name": "", "expected": false},
+    {"test_case_id": 1, "name": "  ", "expected": false},
+
+
+    {"test_case_id": 6, "name": "ChristopherJohnsonX", "expected": false},
+    {"test_case_id": 7, "name": "123456", "expected": false},
+    {"test_case_id": 8, "name": "@#$%^&*", "expected": false},
+
+    {"test_case_id": 12, "name": "李小龙", "expected": false},
+    {"test_case_id": 19, "name": "VeryLongNameExceedingLimit", "expected": false}
+
+  ],
+   "valid_name_tests": [
+    {"test_case_id": 4, "name": "Anna", "expected": false}
+  ],
+
+
+
+  "password_test_data":[
+    {"test_case_id": 1, "password": "", "expected": false},
+    {"test_case_id": 2, "password": " ", "expected": false},
+    {"test_case_id": 3, "password": "123", "expected": false},
+    {"test_case_id": 4, "password": "abc", "expected": false},
+    {"test_case_id": 5, "password": "12345", "expected": false},
+    {"test_case_id": 6, "password": "abcd5", "expected": false},
+    {"test_case_id": 7, "password": "     ", "expected": false},
+    {"test_case_id": 8, "password": "\t\t\t", "expected": false},
+    {"test_case_id": 9, "password": "\n\n\n", "expected": false},
+    {"test_case_id": 10, "password": "1234 ", "expected": false},
+    {"test_case_id": 11, "password": " ab12 ", "expected": false},
+    {"test_case_id": 12, "password": "😀😀😀😀", "expected": false},
+    {"test_case_id": 13, "password": "pwd!", "expected": false},
+    {"test_case_id": 14, "password": "1234!", "expected": false},
+    {"test_case_id": 15, "password": "１２３４５", "expected": false},
+    {"test_case_id": 16, "password": "pass\n", "expected": false},
+    {"test_case_id": 17, "password": "pas\t1", "expected": false},
+    {"test_case_id": 18, "password": "@#$%", "expected": false},
+    {"test_case_id": 19, "password": "aaaaa", "expected": false},
+    {"test_case_id": 20, "password": "11111", "expected": false},
+    {"test_case_id": 21, "password": "मुझे1", "expected": false},
+    {"test_case_id": 22, "password": "abc１２", "expected": false},
+    {"test_case_id": 23, "password": "🔥🔥🔥", "expected": false},
+    {"test_case_id": 24, "password": "     ", "expected": false},
+    {"test_case_id": 25, "password": "short", "expected": false}
+],
+  "valid_password":[{"test_case_id": 25, "password": "123456", "expected": false}]
+
+
+}

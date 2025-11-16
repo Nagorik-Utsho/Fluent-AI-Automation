@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64dfc557-3d51-4fb1-807e-0104b387b7fb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Features/SignUp/validate_AccountCreation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/page_navigation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_AccountCreation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/SignIn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/SignUp/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/SignIn/go_to_information_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Features/SignIn/validate_signin_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/SignUp/validate_signup_information.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Data/SiginTest_data/interest_test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Test Data/SignUP_Test_data/information_test_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test Data/SiginTest_data/name_test_data.json" beforeDir="false" afterPath="$PROJECT_DIR$/Test Data/SignUP_Test_data/create_account_test_data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/activities.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/activities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/locators.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_signup_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_signup_information.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,8 +45,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python tests.Python tests for test AccountCreation.test_phone_number.executor": "Run",
+    "Python tests.Python tests for test_AccountCreation.test_otp_verification_page.executor": "Run",
+    "Python tests.Python tests for test_AccountCreation.test_phone_number.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_area_of_improve.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_click__time.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_english_level.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_goal_time.executor": "Run",
     "Python tests.Python tests for test_signup_information.test_signin_information.executor": "Run",
     "Python tests.Python tests for test_signup_information.test_singin_information.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_time.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_validate_interest_field.executor": "Run",
+    "Python tests.Python tests for test_signup_information.test_validate_name.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
@@ -56,8 +74,8 @@
       <recent name="C:\Users\USER\PythonProject\FluentAI\tests\SignIn" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_signup_information.test_signin_information">
-    <configuration name="Python tests for test_signup_information.test_signin_information" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_AccountCreation.test_otp_verification_page">
+    <configuration name="Python tests for test_AccountCreation.test_otp_verification_page" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FluentAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -68,11 +86,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_signup_information.test_signin_information&quot;" />
+      <option name="_new_target" value="&quot;test_AccountCreation.test_otp_verification_page&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_signup_information.test_singin_information" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_AccountCreation.test_phone_number" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FluentAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,30 +101,62 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_signup_information.test_singin_information&quot;" />
+      <option name="_new_target" value="&quot;test_AccountCreation.test_phone_number&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_signup_information.test_singin_information" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_signup_information.test_click__time" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="FluentAI" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/SignIn" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_signup_information.test_singin_information&quot;" />
+      <option name="_new_target" value="&quot;test_signup_information.test_click__time&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_signup_information.test_time" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FluentAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_signup_information.test_time&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_AccountCreation.test_phone_number" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="FluentAI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_AccountCreation.test_phone_number&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_signup_information.test_signin_information" />
-        <item itemvalue="Python tests.Python tests for test_signup_information.test_singin_information" />
-        <item itemvalue="Python tests.Python tests for tests.test_signup_information.test_singin_information" />
+        <item itemvalue="Python tests.Python tests for test_AccountCreation.test_otp_verification_page" />
+        <item itemvalue="Python tests.Python tests for test_AccountCreation.test_phone_number" />
+        <item itemvalue="Python tests.Python tests for tests.test_AccountCreation.test_phone_number" />
+        <item itemvalue="Python tests.Python tests for test_signup_information.test_click__time" />
+        <item itemvalue="Python tests.Python tests for test_signup_information.test_time" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +188,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/core/activities.py</url>
-          <line>87</line>
+          <line>146</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

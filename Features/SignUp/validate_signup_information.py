@@ -1,29 +1,49 @@
 from logging import exception
 
 from appium.webdriver.extensions.android.common import Common
+from pandas.core.reshape.util import tile_compat
 
-from core.activities import fill_input_field, scroll_and_collect_all_elements, click_on, match_element
+from core.activities import fill_input_field, scroll_and_collect_all_elements, click_on, match_element, \
+    collect_on_screen_items
 from core.locators import CommonElements, Android, InformationPage
 from core.report_generator import save_to_csv
 
+def validate_title(driver,actual_xpath,target_title):
+    check_title=match_element(driver,actual_xpath,target_title)
 
-def validate_name_input_field(driver,name):
+    return check_title
 
+def validate_input_field(driver,name):
 
     fill_input_field(driver,CommonElements.input_filed,name)
     click_on(driver,Android.android_NextButton)
 
 
-def validate_all_interests(driver, expected_interests_data):
-    click_on(driver, InformationPage.interest_more_button)
+
+def validate_onscreen_items(driver,english_level):
+
+
+    #Target english level selection
+    #title_match=match_element(driver,InformationPage.title_level_english,"What is your level of English")
+
+    #match_element
+    level_match=match_element(driver, InformationPage.interest_found(english_level), f"{english_level}")
+
+    return level_match
+
+
+
+def validate_all_collection(driver, expected_data,key_name):
+
 
     # Collect all UI interests
     result = scroll_and_collect_all_elements(driver)
+    print(result['elements'])
     ui_interests = set(result['elements'])
 
 
     # Prepare expected interests
-    expected_interests = set([item['interest'] for item in expected_interests_data])
+    expected_interests = set([item[key_name] for item in expected_data])
 
     # Compare sets
     missing_in_ui = expected_interests - ui_interests  # Expected but not in UI
@@ -38,8 +58,10 @@ def validate_all_interests(driver, expected_interests_data):
         "extra": extra_in_ui
     }
 
-def validate_interest_search_functionality(driver , search_value ):
 
+
+
+def validate_interest_search_functionality(driver , search_value ):
 
 
 
@@ -52,7 +74,7 @@ def validate_interest_search_functionality(driver , search_value ):
     return interest_found
 
 
-def validate_interest_select_deselect_functionality(driver,interest,selected):
+def validate_select_deselect_functionality(driver,interest,selected):
 
     fill_input_field(driver,InformationPage.search_bar,interest)
 

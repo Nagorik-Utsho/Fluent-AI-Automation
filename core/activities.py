@@ -22,10 +22,34 @@ def fill_input_field(driver, locator, value, index=0, timeout=30):
     return field
 
 
-import time
-from selenium.common.exceptions import StaleElementReferenceException, TimeoutException
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+def enter_otp(driver, locator , data, timeout=20):
+    """
+    Enters a multi-digit OTP into separate EditText fields.
+
+    :param driver: Appium driver
+    :param otp: OTP string, e.g. "555555"
+    :param class_name: class name of OTP input fields (default: android.widget.EditText)
+    :param timeout: maximum wait time for elements
+    """
+    if not data or len(data) == 0:
+        raise ValueError("OTP must be a non-empty string")
+
+    # Wait until all OTP fields are present
+    wait = WebDriverWait(driver, timeout)
+    fields = wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, locator)))
+
+    if len(fields) < len(data):
+        raise Exception(f"Expected at least {len(data)} OTP fields, found {len(fields)}")
+
+    # Fill each digit
+    for i, digit in enumerate(data):
+        field = fields[i]
+        field.click()
+        try:
+            field.clear()  # optional
+        except:
+            pass  # ignore if clear() fails
+        field.send_keys(digit)
 
 
 
@@ -56,6 +80,41 @@ def click_on(driver, locator_value, timeout=30, max_retries=3):
             raise
     # If still fails after retries
     raise StaleElementReferenceException(f"Failed to click on element after {max_retries} retries: {locator_value}")
+
+
+def collect_on_screen_items(driver, locator_value, expected_text=None, timeout=5):
+    """
+    Collect all visible elements on the screen by a locator and return their text as a set.
+
+    Args:
+        driver: Selenium WebDriver instance.
+        locator_value: Tuple for locating elements, e.g., (By.CSS_SELECTOR, ".item").
+        expected_text: Optional; if provided, only include elements containing this text.
+        timeout: Maximum time to wait for elements to be present.
+
+    Returns:
+        A set of strings representing the text of the collected elements.
+    """
+    try:
+        # Wait until at least one element is present
+        WebDriverWait(driver, timeout).until(
+            EC.presence_of_all_elements_located(locator_value)
+        )
+
+        elements = driver.find_elements(*locator_value)
+        collected_texts = set()
+
+        for elem in elements:
+            text = elem.text.strip()
+            if text:  # Only non-empty text
+                if expected_text is None or expected_text in text:
+                    collected_texts.add(text)
+
+        return collected_texts
+
+    except Exception as e:
+        print(f"⚠️ Exception while collecting items: {e}")
+        return set()
 
 
 def match_element(driver, locator_value, expected_text, timeout=5):
